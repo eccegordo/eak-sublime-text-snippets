@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+var router = Ember.Router.map(function(){
+  // this.resource('posts', function() {
+  //   this.route('new');
+  // }); 
+  ${1}
+});
+
+export default router;
+]]></content>
+    <description>EAK App.Router.map()</description>
+    <tabTrigger>eak-router</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

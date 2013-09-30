@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+
+// ${1:MyModel} implementation using Ember Persistence Foundation
+// http://epf.io
+
+var ${1:MyModel} = Ep.Model.extend({
+  ${2:attr}: Ep.attr('${3:string}'),
+  ${4:attr}: Ep.attr('${5:string}')
+
+  ${6:attr}: Ep.hasMany(${7:OtherModel}),
+  ${8:attr}: Ep.belongsTo(${9:AnotherModel})
+
+});
+
+export default ${1:MyModel};
+
+]]></content>
+    <description>EAK Model (Ember Persistence Foundation) </description>
+    <tabTrigger>eak-model-epf</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

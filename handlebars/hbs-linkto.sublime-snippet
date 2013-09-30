@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+
+{{#link-to '${1:route}'}}${2:text}{{/link-to}}
+
+]]></content>
+  <description>HBS {{#linkTo }} {{/linkTo}}</description>
+  <tabTrigger>hbs-link-to</tabTrigger>
+</snippet>

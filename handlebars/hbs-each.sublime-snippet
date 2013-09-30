@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+
+{{#each ${1:item} in ${2:model}}}
+  ${3}
+{{/each}}
+
+]]></content>
+  <description>HBS {{#each }} {{/each}}</description>
+  <tabTrigger>hbs-each</tabTrigger>
+</snippet>

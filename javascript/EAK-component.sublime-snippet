@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+
+var ${1:MyWidget}Component = Ember.Component.extend({
+    ${2:someproperty}: null,
+
+    actions: {
+        ${3:doSomething}: function(${4:input}) {
+            console.log("${1:MyWidget}Component ${3:doSomething} %O", ${4:input});           
+            // Implement behavior
+
+            // Send action to external scope
+            this.sendAction('${5:action}', ${4:input});
+        }       
+    }       
+});
+
+export default ${1:MyWidget}Component;
+
+/* 
+* Handlebars Usage
+  {{${6:my-widget} ${5:action}="externalFunction" ${2:someproperty}="externalValue"}}
+*/
+
+]]></content>
+    <description>EAK Component</description>
+    <tabTrigger>eak-component</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

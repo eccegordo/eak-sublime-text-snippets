@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+import Resolver from 'resolver';
+import router from 'appkit/router';
+
+var ${1:App} = Ember.Application.create({
+  LOG_ACTIVE_GENERATION: true,
+  LOG_VIEW_LOOKUPS: true,
+  VERSION ${2:0.0.1}
+  modulePrefix: 'appkit', // TODO: loaded via config
+  Resolver: Resolver,
+  Router: Ember.Router.extend({
+    router: router
+  })
+});
+
+export default ${1:App};
+]]></content>
+    <description>EAK Application Create</description>
+    <tabTrigger>eak-app</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

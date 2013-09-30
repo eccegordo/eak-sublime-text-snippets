@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+
+import { ${1:myMethod} } from 'appkit/${2:utils/file_name}';
+
+test("${3:Describe functionality being tested}", function(){
+  equal( ${1:myMethod}( ${4:input} ), ${4:input} );
+});
+
+]]></content>
+    <description>EAK Unit Test</description>
+    <tabTrigger>eak-unit-test</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

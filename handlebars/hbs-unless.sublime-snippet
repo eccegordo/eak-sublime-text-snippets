@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+
+{{#unless ${1:property}}}
+  ${2}
+{{/unless}}
+
+]]></content>
+  <description>HBS {{#unless }} {{unless}}</description>
+  <tabTrigger>hbs-unless</tabTrigger>
+</snippet>

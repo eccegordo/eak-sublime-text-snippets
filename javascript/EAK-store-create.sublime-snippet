@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+
+ var ${1:App}.store = DS.Store.create({
+   adapter: '${1:App.CustomAdapter}'
+ });
+
+export default ${1:App};
+
+]]></content>
+    <description>EAK Store Create</description>
+    <tabTrigger>eak-store-create</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

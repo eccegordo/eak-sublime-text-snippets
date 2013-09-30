@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+
+var ${1:taskName} = require('${2:taskfile}');
+
+module.exports = function(grunt) {
+  grunt.registerTask('${3:dotask}', '${4:A description of the task}', function() {
+    // implement task logic here
+    ${5}
+  });
+};
+
+
+]]></content>
+    <description>EAK Grunt Task</description>
+    <tabTrigger>eak-grunt-task</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

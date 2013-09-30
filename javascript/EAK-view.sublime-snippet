@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+
+var ${1:Filter}View = Ember.View.extend({
+  classNames: ['${2:filter}-view-cls'],
+  elementId: '${2:filter}-view',
+
+  didInsertElement: function() {
+    ${3:// do something when view is added to DOM}
+  }
+
+});
+
+export default ${1:Filter}View;
+
+
+]]></content>
+    <description>EAK View</description>
+    <tabTrigger>eak-view</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

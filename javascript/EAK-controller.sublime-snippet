@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+
+import { ${6:utilityName} } from 'appkit/utils/${7:utility_name}';
+
+
+var get = Ember.get;
+
+var ${1:Thing}Controller = Ember.${2:Array}Controller.extend({
+${10:
+// var ${1:Thing}Controller = Ember.ObjectController.extend({
+// var ${1:Thing}Controller = Ember.Controller.extend({
+}
+  // needs: [],
+  ${3:instanceVar}: "${4:foo}",
+
+  ${5:computedMethod}: function() {
+    var value = this.get('${3:instanceVar}') + "bar";
+    return value;
+  }.property('${3:instanceVar}'),
+
+  ${8:utiltyMethod}: function(${9:input}) {
+    // transforn input with ${6:utilityName}
+    return ${6:utilityName}(${9:input});
+  }
+
+});
+
+export default ${1:Thing}Controller;
+
+]]></content>
+    <description>EAK Controller</description>
+    <tabTrigger>eak-controller</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

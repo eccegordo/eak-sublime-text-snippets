@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+
+{{#if ${1:property}}}
+  ${2}
+{{/if}}
+
+]]></content>
+  <description>HBS {{#if }} {{/if}}</description>
+  <tabTrigger>hbs-if</tabTrigger>
+</snippet>

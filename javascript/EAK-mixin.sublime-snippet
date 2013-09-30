@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+${1:Mixin} = Ember.Mixin.create({
+  ${2}
+});
+
+export default ${1:Mixin};
+
+]]></content>
+    <description>EAK Mixin</description>
+    <tabTrigger>eak-mixin</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

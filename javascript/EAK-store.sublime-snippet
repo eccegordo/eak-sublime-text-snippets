@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+
+var ${1:App}.Store = DS.Store.extend({
+  adapter: ${1:App}.Adapter.create({
+    namespace: 'api',
+    serializer: ${1:App}.RESTSerializer
+  })
+});
+
+export default ${1:App};
+
+
+]]></content>
+    <description>EAK Store Extend</description>
+    <tabTrigger>eak-store</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

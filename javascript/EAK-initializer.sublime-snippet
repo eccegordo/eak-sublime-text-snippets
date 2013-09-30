@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+
+// Initializer for ${1:Foo} Class
+
+import ${1:Foo} from 'appkit/${2:projectname}/${3:foo}';
+
+var initializer = {
+  name: '${2:projectname}-${3:foo}',
+  initialize: function(container, application) {
+    var ${3:foo} = new ${1:Foo}(application);
+    application.register('${3:foo}:main', ${3:foo}, { instantiate: false });
+  }
+};
+
+export default initializer;
+
+]]></content>
+    <description>EAK Initializer</description>
+    <tabTrigger>eak-initializer</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

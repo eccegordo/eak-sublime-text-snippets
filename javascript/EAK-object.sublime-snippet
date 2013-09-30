@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+${1:Thing} = Ember.Object.extend({
+  init: function() {
+    // init
+    this._super();
+
+    // do custom initialization here
+    ${2:console.log("init ${1:Thing}");}
+  },
+
+  ${3:method}: function(${4:value}) {
+    ${5}
+  }
+});
+
+export default ${1:Thing};
+
+]]></content>
+    <description>EAK Ember.Object.extend()</description>
+    <tabTrigger>eak-object</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

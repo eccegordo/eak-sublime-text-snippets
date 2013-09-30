@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+
+import ${3:Index} from 'appkit/routes/${4:index}';
+import ${1:App} from 'appkit/${2:app}';
+
+module("Acceptance Test - ${3:Index}", {
+  setup: function(){
+    ${1:App}.reset();
+  }
+});
+
+test("${4:index} renders", function(){
+
+  expect(3);
+
+  visit('/').then(function(){
+    ok(exists("h2:contains('Welcome to Ember.js')"));
+
+    var list = find("ul li");
+    equal(list.length, 3);
+    equal(list.text(), "redyellowblue");
+  });
+  ${5}
+
+});
+
+
+]]></content>
+    <description>EAK Acceptance Test</description>
+    <tabTrigger>eak-acceptance-test</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

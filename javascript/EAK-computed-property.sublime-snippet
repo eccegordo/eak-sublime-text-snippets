@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+${1:attr}: function() {
+  var ${2:anotherAttribute} = this.get('${2}');
+  ${3}
+}.property('${2}')
+
+]]></content>
+    <description>EAK Computed Property</description>
+    <tabTrigger>eak-cp</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+

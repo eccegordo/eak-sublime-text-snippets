@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+/*
+* @method ${1:utilityName}
+* @param {${5:String}} ${2:input} ${4:TODO: Needs documentation...}
+*/
+
+function ${1:utilityName}(${2:input}) {
+  // Do something with ${2:input} 
+  var ${3:transform} = ${2:input} + "foo";
+  return ${3:transform};
+}
+
+export default ${1:utilityName};
+
+
+]]></content>
+    <description>EAK Utility Method</description>
+    <tabTrigger>eak-utility</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

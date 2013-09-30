@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+// ${1:MyModel} implementation using Ember Model
+// https://github.com/ebryn/ember-model
+
+var ${1:MyModel} = Ember.Model.extend({
+  ${2:attr}:  attr('${3:string}'),
+  ${4:attr}:  attr('${5:string}')
+
+});
+
+export default ${1:MyModel};
+
+]]></content>
+    <description>EAK Model (Ember Model) </description>
+    <tabTrigger>eak-model-em</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

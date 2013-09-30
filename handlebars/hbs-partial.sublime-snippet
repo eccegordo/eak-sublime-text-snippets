@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+
+{{partial ${1}}}
+
+]]></content>
+  <description>HBS {{partial }}</description>
+  <tabTrigger>hbs-partial</tabTrigger>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+
+// ${1:MyModel} implementation using generic Ember Object
+
+var ${1:MyModel} = Ember.Object.extend({
+  ${2:foo}: null,
+  ${3:bar}: null,
+  ${4:hasOther}: null
+});
+
+export default ${1:MyModel};
+
+]]></content>
+    <description>EAK Model (Ember.Object)</description>
+    <tabTrigger>eak-model-generic</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

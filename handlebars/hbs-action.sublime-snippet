@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+{{action "${1}"}}
+]]></content>
+  <description>HBS {{action }}</description>
+  <tabTrigger>hbs-action</tabTrigger>
+</snippet>

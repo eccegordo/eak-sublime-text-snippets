@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+
+{{#view ${1:viewClass}}}
+  ${2}
+{{/view}}
+
+]]></content>
+  <description>HBS {{#view }} {{/view}}</description>
+  <tabTrigger>hbs-view</tabTrigger>
+</snippet>

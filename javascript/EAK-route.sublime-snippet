@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+
+var ${1:IndexRoute} = Ember.Route.extend({
+  model: function() {
+    return ${3:['A', 'B', 'C']};
+  }
+});
+
+export default ${2:IndexRoute};
+
+]]></content>
+    <description>EAK Ember.Route.extend()</description>
+    <tabTrigger>eak-route</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

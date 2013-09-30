@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+
+// ${1:MyModel} implementation using Ember Data
+// https://github.com/emberjs/data
+// http://emberjs.com/guides/models
+
+var ${1:MyModel} = DS.Model.extend({
+  ${2:attr}: DS.attr('${3:string}'),
+  ${4:attr}: DS.attr('${5:string}'),
+  ${6:attr}: DS.belongsTo('${7:OtherModel}'),
+  ${8:attr}: DS.hasMany('${9:AnotherModel}')
+
+});
+
+
+export default ${1:MyModel};
+
+]]></content>
+    <description>EAK Model (Ember Data) </description>
+    <tabTrigger>eak-model-ed</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

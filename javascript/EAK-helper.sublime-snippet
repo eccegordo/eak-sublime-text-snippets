@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+
+var ${1:helperFunction}' = function() {
+  // do stuff with helper
+  var ${2:value} = ${3:"helper output";}
+  return ${2:value}
+};
+
+${1:helperFunction}.raw = true; // use registerHelper
+
+export default ${1:helperFunction};
+
+]]></content>
+    <description>EAK Helper</description>
+    <tabTrigger>eak-helper</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
