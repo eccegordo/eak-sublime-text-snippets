@@ -4,11 +4,18 @@ These snippets provide access to common functionality for tab completion of Embe
 The snippets have been optimized and formatted for Ember App Kit syntax and module exports.
 
 ## How to Use
-Install these snippets in a folder in your packages folder of sublime text 2
-
 Type out the snippet shortcut and press `tab` to expand the snippet.
 
 Continue to tab through the snippet to edit segments within the snippet.
+
+## How to Install (OS X)
+
+`cd ~/Library/Application Support/Sublime Text 2/Packages`
+`git clone git@github.com:eccegordo/eak-sublime-text-snippets.git`
+
+Restart Sublime Text 2
+
+Start using text snippets. 
 
 ## EAK Ember.js
 
