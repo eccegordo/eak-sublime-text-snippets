@@ -1,0 +1,87 @@
+<snippet>
+    <content><![CDATA[
+/* 
+   // How To Add To EAK API Stub
+   // Save this file as 
+   // api-stub/${1:models}.js
+
+   // Open the file tasks/express-server.js 
+   // and after require('../api-stub/routes')(app);
+
+   // add this line
+   // require('../api-stub/${1:models}')(app);
+
+
+    Simulate the API backend for ${4:Model} implementation EmberJS + Ember Data
+    Return fixture data
+    http://0.0.0.0:8000/api/${1:models}/
+    http://0.0.0.0:8000/api/${1:models}/:id
+*/
+
+/* 
+var ${4:Model} = DS.Model.extend({
+  ${5:foo}: DS.attr(),
+});
+export default ${4:Model};
+*/
+
+module.exports = function(server) {
+    
+    // Fixture data dynamic
+    var ${3:collection} = function() {
+        var records = [];
+        var numRecords = 10; 
+        for (var i=0;i<numRecords;i++)
+        { 
+            var item = {
+                id: i,
+                ${5:foo}: "${6:foo_value} " + i,
+            };
+            records.push(item); 
+        }
+        return records;
+
+        /*
+        // Use this if you want to manually write out the collection
+
+        var records = [
+            { id: 0, ${5:foo}: "${6:foo_value}" },
+            { id: 1, ${5:foo}: "${6:foo_value}" }
+            // etc ...
+        ];
+
+        return records;
+        */
+    };
+
+  // Create an API namespace, so that the root does not 
+  // have to be repeated for each end point.
+    server.namespace('/api', function() {
+
+        // Return fixture data for '/api/${1:models}/'
+        server.get('/${1:models}/', function(req, res) {
+            var records = ${3:collection}();
+            var data = { ${1:models}: records };
+            res.send(data);
+        });
+
+        // Return fixture data for '/api/${1:models}/:id'
+        server.get('/${1:models}/:id', function(req, res) {
+            var id = req.params.id;
+            var records = ${3:collection}();
+            var record = {"${2:model}": records[id]};
+            res.send(record);
+        });
+    });
+
+};
+
+/* 
+${7: Additional notes about the API Spec}
+*/
+
+]]></content>
+    <description>EAK API Stub</description>
+    <tabTrigger>eak-api-stub</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

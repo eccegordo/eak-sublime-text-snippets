@@ -20,6 +20,7 @@ Start using text snippets.
 ## EAK Ember.js
 
 - eak-acceptance-test ⇥
+- eak-api-stub ⇥
 - eak-app ⇥
 - eak-component ⇥
 - eak-cp ⇥
